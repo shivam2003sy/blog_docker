@@ -23,7 +23,8 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'static/uploads'
 SECRET_KEY = 'mysecretkeyyoucannotguessit'
 app.config['SECRET_KEY'] = SECRET_KEY
-CORS(app)
+CORS(app, resources={r"*": {"origins": "https://vloglite-qw6o.vercel.app"}})
+
 
 # done
 mail =None
