@@ -24,6 +24,8 @@ app.config['UPLOAD_FOLDER'] = 'static/uploads'
 SECRET_KEY = 'mysecretkeyyoucannotguessit'
 app.config['SECRET_KEY'] = SECRET_KEY
 CORS(app)
+
+# done
 mail =None
 mail = Mail(app)
 # Configure mail settings for Outlook
